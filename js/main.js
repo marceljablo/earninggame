@@ -25,45 +25,20 @@ async function renderLandingPage() {
     const container = document.getElementById('mainContent');
     container.innerHTML = `
         <div class="row justify-content-center fade-in">
-            <div class="col-lg-8">
-                <div class="card text-center">
-                    <div class="card-body py-5">
-                        <i class="fas fa-graduation-cap fa-4x text-primary mb-3"></i>
-                        <h1 class="display-4">Welcome to <span class="text-primary">EduEarn</span></h1>
-                        <p class="lead">Learn, Answer, and Earn Real Cash!</p>
-                        <div class="row mt-4">
-                            <div class="col-md-4 mb-3">
-                                <div class="p-3 border rounded">
-                                    <i class="fas fa-brain fa-2x text-info"></i>
-                                    <h5>Science & Math & History</h5>
-                                    <small>Answer questions from various subjects</small>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="p-3 border rounded">
-                                    <i class="fas fa-coins fa-2x text-warning"></i>
-                                    <h5>Earn Per Question</h5>
-                                    <small>₱0.0001 - ₱0.001 per correct answer</small>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="p-3 border rounded">
-                                    <i class="fas fa-users fa-2x text-success"></i>
-                                    <h5>Referral Bonuses</h5>
-                                    <small>₱50 per referral + milestone bonuses</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-4">
-                            <button class="btn btn-primary btn-lg me-2" onclick="showLoginModal()">
-                                <i class="fas fa-sign-in-alt"></i> Login
-                            </button>
-                            <button class="btn btn-success btn-lg" onclick="showRegisterModal()">
-                                <i class="fas fa-user-plus"></i> Register
-                            </button>
-                        </div>
+            <div class="col-lg-6">
+                <div class="card mt-5 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+                        <h2>Welcome Back to <span class="text-primary">EduEarn</span></h2>
+                        <p class="text-muted">Login or register to start earning instantly.</p>
+                        <button class="btn btn-primary btn-lg w-100 mt-2" onclick="showLoginModal()">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </button>
+                        <button class="btn btn-success btn-lg w-100 mt-2" onclick="showRegisterModal()">
+                            <i class="fas fa-user-plus"></i> Register
+                        </button>
                         <div class="alert alert-info mt-4">
-                            <i class="fas fa-info-circle"></i> New accounts require admin approval before earning.
+                            <i class="fas fa-info-circle"></i> Accounts require admin approval before earning.
                         </div>
                     </div>
                 </div>
